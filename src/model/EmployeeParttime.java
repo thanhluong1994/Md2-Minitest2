@@ -1,9 +1,11 @@
+package model;
+
 import java.util.Scanner;
 
 public class EmployeeParttime extends Employee {
     public static final int SALARYPERHOUR = 100;
     private double workHour;
-    public EmployeeParttime(){
+    public EmployeeParttime(String id, String name, String age, int number, String email, int workHour){
     }
     //phuong thuc tinh luong thuc linh cho nhan vien parttime:
     @Override

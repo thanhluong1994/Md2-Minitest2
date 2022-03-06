@@ -1,3 +1,7 @@
+package model;
+
+import model.Employee;
+
 public class Method {
     public static void displayEmployee(Employee[] employees) {
         for (Employee e:employees
