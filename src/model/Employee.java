@@ -1,8 +1,9 @@
 package model;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
-public abstract class Employee {
+public class Employee implements Serializable {
     private String employeeId;
     private String fullName;
     private int age;
@@ -71,9 +72,9 @@ public abstract class Employee {
         age=scanner.nextInt();
     }
 
-    public abstract double getNetSalary();
-
-    public abstract void inEployee();
+//    public abstract double getNetSalary();
+//
+//    public abstract void inEmployee();
 
     public String toString(){
         return  "Ma nhan vien :" + this.getEmployeeId() + ", Ho ten nhan vien :" + this.getFullName() +
